@@ -1,0 +1,207 @@
+/* GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: verdana;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* BARRA DE NAVEGAÇÃO [navbar] */
+header nav {
+    background-color: #333;
+}
+
+#navbar img {
+    height: 30px;
+    width: 30px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: .7rem;
+    padding:  o 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#navbar a {
+    color: #f7f7f7;
+    transition: .4s;
+}
+
+#navbar a:hover{
+    color: #fff;
+}
+
+#bottom-header{
+    font-size: .8rem;
+    padding: 1rem;
+    border-bottom: solid 1px #ccc;    
+}
+
+#bottom-header h3 {
+    font-size: 1.2rem;
+}
+
+#bottom-header a{
+    color: #333;
+    
+}
+
+#bottom-header-inner{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#bottom-header-inner a {
+    margin: 0 .50rem;
+}
+
+#bottom-header-links .btn , .btn {
+    background-color: #5f62fd;
+    color: #fff;
+    border-radius: 10rem;
+    padding:  .4rem 1rem;
+    transition: 0.4s;
+}
+/* #bottom-header-links .btn:hover {
+    background-color: #fff;
+    color: #5f62fd;
+    border:solid 1px #5f62fd;
+} */
+
+/* CONTEÚDO "ribbon" */
+
+#ribbon {
+    background-color: #f5f5f7;
+    color: #1d1d1d;
+    font-size: .7rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+#ribbon a {
+    color: #0071e3;
+}
+
+#main-content {
+    text-align: center;
+    color: #1d1d1d ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#main-content #title {
+    margin: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#main-content #subtitle{
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#main-content #description {
+    max-width: 600px;
+    margin: 1rem auto;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
+#main-content #price {
+    color: #86868b;
+    font-size: 1.3rem;
+    margin: 2rem;
+}
+
+#main-content .btn {
+    font-size: 1.1rem;
+    padding: .8rem 1.4rem;
+    align-self: center; /* esse função é usanda para centralizar o elemento quando se usa o paddind */
+    transition: .4s;
+}
+/* #main-content .btn:hover{
+    background-color: #fff;
+    color: #5f62fd;
+    border:solid 1px #5f62fd;
+} */
+
+#main-content #product-image {
+    max-width: 1000px; /* colocando uma largura de 1000px para a imagem não ficar tão grande como estava. */
+    margin: 3rem auto; /* coloquei um espaçamento entre os elementos de 3rem e depois coloquei auto na largura para poder centralizar.*/
+    opacity: 1; /* colocando a opacity 1 para quando colocarmos animação, o JS vai fazer a troca. */
+    transition: .5s; /* o tempo que vai levar a animação de troca da cor do iphone. */
+
+}
+
+#main-content #product-image.changing{  /* changing = mudando */
+   opacity: .5s;
+}
+
+#image-picker {
+    margin-bottom: 500px; 
+    
+}
+
+#image-picker ul{
+    display: flex;
+    justify-content: center;
+}
+
+#image-picker li{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+#image-picker li .color{
+    width: 2rem; /* largura */
+    height: 2rem; /* altura */
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px;
+    border: 4px solid #fff;
+    pointer-events: none;
+    
+}
+#image-picker li .description{
+    color: #1d1d1d;
+    font-size: .7rem;
+    margin-top: .6rem;
+}
+#green .color {
+    background-color: #394c38;
+}
+#silver .color {
+    background-color: #f1f2ed;
+}
+#golden .color {
+    background-color: #fae7cf;
+}
+#grafite .color {
+    background-color: #54524f;
+}
+#blue .color {
+    background-color: #a7c1d9;
+}
+
+.selected {
+    outline: 2px solid #43a1ff ; /* esse comando tem um semelhança com o border, a diferença dele é que é muito bom para quem não usa o mouse e sim a tecla TAB */ 
+}
