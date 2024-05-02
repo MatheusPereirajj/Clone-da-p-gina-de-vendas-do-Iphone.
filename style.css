@@ -205,3 +205,63 @@ header nav {
 .selected {
     outline: 2px solid #43a1ff ; /* esse comando tem um semelhança com o border, a diferença dele é que é muito bom para quem não usa o mouse e sim a tecla TAB */ 
 }
+
+
+/* MOBILE */
+
+
+@media (max-width: 480px){
+    #navbar li {
+        display: none;
+    }
+    
+    #navbar #logo{
+        display: flex;
+    }
+
+    #bottom-header-links a {
+        display: none;
+    }
+    
+    #bottom-header-links .btn{
+        display: flex;
+    }
+    
+    /* #main-content #product-image {   
+        max-width: 400px;
+    } */
+    /* eu poderia usar esse redimendionamento para deixar a img completamente no tamanho da tela, mas iria ficar muito feio. então resolvi usar a img real, com a opção de: o que passar da tela ficará oculto.*/
+    
+    
+    #main-content {
+        padding: 2rem; /* para afastar um pouco das laterais da tela. */
+        overflow: hidden; /* com o overflow: hidden, eu informo ao css que: o que passar da largura determinada ficará oculto.  */
+    }
+
+    #main-content #subtitle{
+        font-size: 3rem;
+    }
+    
+}
+
+@media (max-width: 768px){
+    #main-content {
+        overflow: hidden; 
+        /* margin: 1rem; */
+    }
+
+}
+
+@media (max-width: 820px){
+    #main-content {
+        overflow: hidden; 
+        /* margin: 1rem; */
+    }
+
+}
+@media (max-width: 360px){
+    #main-content #subtitle{
+        font-size: 2.9rem;
+    }
+}
+
